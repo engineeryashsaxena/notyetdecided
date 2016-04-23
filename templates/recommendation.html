@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NYD</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">        
+        <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/typicons/typicons.min.css">
+        <link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/animate.css">
+		<link rel="stylesheet" href="/static/css/form-elements.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/media-queries.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="/static/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/static/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+    
+        <!-- Loader -->
+    	<div class="loader">
+    		<div class="loader-img"></div>
+    	</div>
+
+		<!-- Top menu -->
+		<nav class="navbar navbar-inverse navbar-fixed-top navbar-no-bg" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/welcome">NYD</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="top-navbar-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a  href="/welcome">Home</a></li>
+                        <li><a  href="/logout">Log Out</a></li>
+						
+						
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+        <!-- Top content -->
+      
+        
+    
+		<!-- Pricing -->
+        <div class="top-content pricing-container section-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 pricing section-description wow fadeIn">
+	                    <h2 style="color:white;">Recommendations </h2>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                </div>
+	            </div>
+	            <div class="row">
+                	
+                    <div class="col-sm-4 pricing-box pricing-box-best wow fadeInDown">
+                    	<div class="pricing-box-inner">
+		                	<div class="pricing-box-price">
+                                <h4>{{top3[0][1]}}</h4>
+                                <h6>{{top3[0][0]}}</h6>
+		                		<div class="pricing-box-icon">
+			                    <strong class="fa-stack-5x">1</strong>
+                             	</div>
+		                	</div>
+		                
+		                    <div class="pricing-box-sign-up">
+                               
+		            <li>  <a class="btn btn-link-1 scroll-link" href="/{{top3[0]}}">Download</a>
+		                  </li>  </div>
+		                </div>
+                    </div>
+                    
+                     <div class="col-sm-4 pricing-box pricing-box-best wow fadeInDown">
+                    	<div class="pricing-box-inner">
+		                	<div class="pricing-box-price">
+                                <h4>{{top3[1][1]}}</h4>
+                                <h6>{{top3[1][0]}}</h6>
+		                		<div class="pricing-box-icon">
+			                    <strong class="fa-stack-5x">2</strong>
+                             	</div>
+		                	</div>
+		                
+		                    <div class="pricing-box-sign-up">
+		                  <a class="btn btn-link-1 scroll-link" href="#top-content">Download</a>
+		                    </div>
+		                </div>
+                    </div>
+                    
+                     <div class="col-sm-4 pricing-box pricing-box-best wow fadeInDown">
+                    	<div class="pricing-box-inner">
+		                	<div class="pricing-box-price">
+                                <h4>{{top3[2][1]}}</h4>
+                                <h6>{{top3[2][0]}}</h6>
+		                		<div class="pricing-box-icon">
+			                    <strong class="fa-stack-5x">3</strong>
+                             	</div>
+		                	</div>
+		                
+		                    <div class="pricing-box-sign-up">
+		                  <a class="btn btn-link-1 scroll-link" href="#top-content">Download</a>
+		                    </div>
+		                </div>
+                    </div>
+                </div>
+                <div class="row">
+                     <div class="col-sm-4 pricing-box pricing-box-best wow fadeInDown">
+                    	<div class="pricing-box-inner">
+		                	<div class="pricing-box-price">
+                                <h4>{{top3[3][1]}}</h4>
+                                <h6>{{top3[3][0]}}</h6>
+		                		<div class="pricing-box-icon">
+			                    <strong class="fa-stack-5x">4</strong>
+                             	</div>
+		                	</div>
+		                
+		                    <div class="pricing-box-sign-up">
+		                  <a class="btn btn-link-1 scroll-link" href="#top-content">Download</a>
+		                    </div>
+		                </div>
+                    </div>
+                    
+                     <div class="col-sm-4 pricing-box pricing-box-best wow fadeInDown">
+                    	<div class="pricing-box-inner">
+		                	<div class="pricing-box-price">
+                                <h4>{{top3[4][1]}}</h4>
+                                <h6>{{top3[4][0]}}</h6>
+		                		<div class="pricing-box-icon">
+			                    <strong class="fa-stack-5x">5</strong>
+                             	</div>
+		                	</div>
+		                
+		                    <div class="pricing-box-sign-up">
+		                  <a class="btn btn-link-1 scroll-link" href="#top-content">Download</a>
+		                    </div>
+		                </div>
+                    </div>
+                    
+                     <div class="col-sm-4 pricing-box pricing-box-best wow fadeInDown">
+                    	<div class="pricing-box-inner">
+		                	<div class="pricing-box-price " >
+		                		<h4>{{top3[5][1]}}</h4>
+                                <h6>{{top3[5][0]}}</h6>
+		                		<div class="pricing-box-icon">
+			                    <strong class="fa-stack-5x">6</strong>
+                             	</div>
+		                	</div>
+		                
+		                    <div class="pricing-box-sign-up">
+		                  <a class="btn btn-link-1 scroll-link" href="#top-content">Download</a>
+		                    </div>
+		                </div>
+                    </div>
+                    
+                   
+	            </div>
+	        </div>
+        </div>
+        
+     
+     
+
+
+        <!-- Javascript -->
+        <script src="/static/js/jquery-1.11.1.min.js"></script>
+        <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/static/js/jquery.backstretch.min.js"></script>
+        <script src="/static/js/wow.min.js"></script>
+        <script src="/static/js/retina-1.1.0.min.js"></script>
+        <script src="/static/js/waypoints.min.js"></script>
+        <script src="/static/js/scripts.js"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="/static/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+
+
+</html>

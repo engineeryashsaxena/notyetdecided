@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>NYD</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">        
+        <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/typicons/typicons.min.css">
+        <link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/css/animate.css">
+		<link rel="stylesheet" href="/static/css/form-elements.css">
+        <link rel="stylesheet" href="/static/css/style.css">
+        <link rel="stylesheet" href="/static/css/media-queries.css">
+     <link rel="stylesheet" href="/static/css/bootstrap-tagsinput.css">
+    
+         <link rel="stylesheet" href="/static/css/app.css">
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="/static/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/static/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/static/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/static/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="/static/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+    
+        <!-- Loader -->
+    	<div class="loader">
+    		<div class="loader-img"></div>
+    	</div>
+
+		<!-- Top menu -->
+		
+      
+        
+        <!-- Features -->
+        <div class="feature-container section-container">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-12 features section-description wow fadeIn">
+	                    <h2>Make Your Profile</h2>
+                        <p>Give space separated answers</p>
+	                    <div class="divider-1 wow fadeInUp"><span></span></div>
+	                </div>
+	            </div>
+                <form role="form" action="/makeprofile" method="post">
+	            <div class="row">
+                	<div class="col-sm-4 features-box features-box-gray wow fadeInUp">
+                        <div class="features-box-icon">
+	                		<i class="fa fa-history"></i>
+	                	</div>
+                        <h3>Technologies you have previously worked on ?</h3>
+	                	<div class="form-group">
+			                    		<label class="sr-only" for="form-first-name">First name</label>
+			                        	<input type="text" name="q1" placeholder="Answer.... " class="form-first-name form-control" id="form-first-name" required data-role="tagsinput"/>
+			                        </div>
+	                    
+                    </div>
+                    <div class="col-sm-4 features-box wow fadeInDown">
+                        <div class="features-box-icon">
+	                		<i class="fa fa-heart"></i>
+	                	</div>
+	                	 <h3>Technologies you are interested in ? </h3>
+	                	<div class="form-group">
+			                    		<label class="sr-only" for="form-first-name">First name</label>
+			                        	<input type="text" name="q2" placeholder="Answer......" class="form-first-name form-control" id="form-first-name"  required data-role="tagsinput">
+			                        </div>
+                    </div>
+                    <div class="col-sm-4 features-box features-box-gray wow fadeInUp">
+                        <div class="features-box-icon">
+	                		<i class="fa fa-close"></i>
+	                	</div>
+	                	 <h3>Technologies you don't want to work on?</h3>
+	                <div class="form-group">
+			                    		<label class="sr-only" for="form-first-name">First name</label>
+			                        	<input type="text" name="q3" placeholder="Answer....." class="form-first-name form-control" id="form-first-name"  required data-role="tagsinput">
+			                        </div>
+                    </div>
+	            </div>
+                
+	            <div class="row">
+                	<div class="col-sm-4 features-box wow fadeInUp">
+	                	<div class="features-box-icon">
+	                		<i class="fa fa-fighter-jet"></i>
+	                	</div>
+	                     <h3>Your Future Aspiration ? </h3>
+	                	<div class="form-group">
+			                    		<label class="sr-only" for="form-first-name">First name</label>
+			                        	<input type="text" name="q4" placeholder="Answer.... " class="form-first-name form-control" id="form-first-name"  required data-role="tagsinput">
+			                        </div>
+                    </div>
+                    <div class="col-sm-4 features-box features-box-gray wow fadeInDown">
+	                
+                        <div class="features-box-icon">
+	                		<i class="fa fa-hourglass-half"></i>
+	                	</div>
+	                	 <h3>What's your time limit ?</h3>
+	                <div class="form-group">
+			                    		<label class="sr-only" for="form-first-name">First name</label>
+			                        	<input type="text" required name="q5" placeholder="Answer....." class="form-first-name form-control" id="form-first-name"  required data-role="tagsinput">
+			                        </div>
+                    </div>
+                    <div class="col-sm-4 features-box wow fadeInUp">
+	                	<div class="features-box-icon">
+	                		<i class="fa fa-lightbulb-o"></i>
+	                	</div>
+	                     <h3>Give your Relevant Keywords</h3>
+	                	<div class="form-group">
+			                    		<label class="sr-only" for="form-first-name">First name</label>
+			                        	<input type="text" name="q6" placeholder="Answer.... " class="form-first-name form-control" id="form-first-name"  required data-role="tagsinput">
+			                        </div>
+                    </div>
+	            </div>
+	            <div class="row">
+	            	<div class="col-sm-12 section-bottom-button wow fadeInUp">
+                           <button type="submit" class="btn " >Submit Answers</button>
+	            	</div>
+	            </div>
+                </form>
+	        </div>
+        </div>
+
+		
+     
+
+
+        <!-- Javascript -->
+        <script src="/static/js/jquery-1.11.1.min.js"></script>
+        <script src="/static/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/static/js/jquery.backstretch.min.js"></script>
+        <script src="/static/js/wow.min.js"></script>
+        <script src="/static/js/retina-1.1.0.min.js"></script>
+        <script src="/static/js/waypoints.min.js"></script>
+        <script src="/static/js/scripts.js"></script>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.11.1/typeahead.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+    <script src="/static/js/bootstrap-tagsinput.min.js"></script>
+         <script src="/static/js/bootstrap-tagsinput.min.js"></script>
+    <script src="/static/js/bootstrap-tagsinput/bootstrap-tagsinput-angular.min.js"></script>
+        <script src="/static/js/app.js"></script>
+    <script src="/static/js/app_bs3.js"></script>
+        
+        <script>
+var citynames = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  prefetch: {
+    url: '/static/css/technames.json',
+    filter: function(list) {
+      return $.map(list, function(cityname) {
+        return { name: cityname }; });
+    }
+  }
+});
+citynames.initialize();
+
+$('input').tagsinput({
+  typeaheadjs: {
+    name: 'citynames',
+    displayKey: 'name',
+    valueKey: 'name',
+    source: citynames.ttAdapter()
+  }
+});
+</script>
+        
+        <!--[if lt IE 10]>
+            <script src="/static/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+
+
+</html>
