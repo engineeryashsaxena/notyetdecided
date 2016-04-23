@@ -1,0 +1,473 @@
+﻿
+SYNOPSIS
+
+
+P2P Library 
+
+JAVA Library Management System
+
+
+
+
+Submitted by
+Mr. Atanu Maity
+
+
+
+
+
+
+MCA (Master of Computer Application)
+
+
+
+
+
+
+XXX Engineering College
+
+
+
+
+
+
+
+
+ Table of Contents
+
+ABSTARCT	7
+Scope and Features	8
+Master and Security module	8
+Transaction module	9
+Drawbacks of Present System	10
+Proposed System	10
+Out of Scope	11
+Goal and objective	12
+Solution Concept	12
+PROBLEM STATEMENT	13
+Requirements Summary	13
+Business Requirements	13
+User Requirements	13
+Operational Requirements	14
+SYSTEM ARCHITECTURE	15
+High Level Solution Architecture	15
+Data Flow and Process Flow Chart	16
+	16
+User Profiles	17
+Usage Summary	18
+SOFTWARE AND HARDWARE REQUIREMENT	19
+General Requirement for Server/Client:	19
+DEVELOPMENT TOOLS AND TECHNOLOGIES	19
+DEVELOPMENT TOOLS AND TECHNOLOGIES	20
+Front End	20
+Back End	20
+Development Environment	21
+DESIGN GOALS AND CONSTRAINTS	22
+LIBRARY MANAGEMENT SYSTEM DATA DICTIONARY	23
+1. EmployeeMaster	23
+2. MemberMaster	24
+3. AreaMaster	25
+4. Category	25
+5. BookMaster	25
+6. LibaryCardMaster	27
+7. PublisherMaster	28
+8. UserMaster	28
+9. Transcation	29
+LIBRARY MANAGEMENT SYSTEM– DATA SCHEMA ER DIAGRAM	30
+ELIBRARY ER DIAGRAM	31
+ELIBRARY DFD (DATA FLOW DIAGRAM)	31
+ELIBRARY DFD (DATA FLOW DIAGRAM)	32
+Context Level DFD	32
+0 LEVEL DATA FLOW DIAGRAM	32
+PLANNING AND SCHEDULING	34
+Planning	34
+Gantt chart:	35
+PERT chart:	36
+CONCLUSION AND FUTURE ENHANCEMENT	37
+BIBLIOGRAPHY	38
+Websites	38
+Books	38
+
+ABSTARCT
+
+Today most of the library is using either manual system for tracking the day to day activity or they are using desktop, spread sheet like MS Excel application to manage the day to day activity. In this proposed Library Management System it will run in client server mode and user can check the book availability, they can search the books, library staff can issue, receive book, and management can check the report. System will store historical data. Management can anytime view the total book status, library card status.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+eLibrary is a complete library solution make this complicated function look much easier. The software is user-friendly, with user-definable preferences like Book category and extensive and search facilities, huge library of periodical data to analyze the trend of issue and receive of books..
+
+
+
+Scope and Features
+The Library Management System is designed & developed for a receipt and issuance of books in the library along with the student’s details. The books received in the library are entered in Books Entry form and the new student is entered in the student entry form. When the student wants to get the desired book the same is issued on the availability basis to the student. The issuance and due date for the returning of the book is also entered into the Book Issue form under third menu Book Issue. The student has to pay the fine if any on the basis of no. of days delayed deposit of the book in the library. 
+Any education institute can make use of it for providing information about author, content of the available books. It can be used in offices and modifications can be easily done according to requirements
+From an end-user perspective, the Library Management System Project consists of two functional elements: Master and Transaction Module.
+
+Master and Security module
+Master and security module includes user security management, login security, book details, member master, library card, library transaction.
+* Login – Check the user by user name and password, All user needs to enter user name and password to access the system, system check the user name and password and give access the system resource only valid user.
+* Main Screen – It display available options, menus and toolbars to the logged user. System display option as per user rights. It also show the name of user currently logged in.
+
+
+Transaction module
+Transaction module includes issuing, receiving book and transaction report.
+
+* Issuing Book – This form used to issue book to the member. In this screen user selects book id, and library card id, system display the book and card history. If book is already issued it display message and details of last issued details. Same way system display card history for the library card no, if book already available it shows the message. If book is available and there is no book pending for received then book is issued and system saves the details. System also has powerful search facility to find the book and member id.
+
+Drawbacks of Present System 
+
+Some of the problems being faced in manual system are as follows: 
+1. Fast report generation is not possible.
+
+
+
+
+Proposed System 
+
+There will be three major components: 
+1. Stock maintenance.
+2. Transaction entry.
+3. Reports.
+Proposed system provides with following solutions: 
+1. It provides "better and efficient" service to members.
+
+
+
+
+
+Out of Scope	
+The following functions are considered out of scope for Version 1 of the Library Management System. Versions 2.0 address items not in scope and those are not feasible during V1.0.
+ 
+FunctionCommentVersionLinking and integration of any legacy system for accounting.Required by management to control and maintain the accounting activity2
+
+
+Goal and objective
+
+
+This section presents a conceptual overview of the solution, and then provides an introduction to its requirements.
+Solution Concept
+The Library Management System consists of:
+
+* Master and Security Module: 
+Master and Security module includes user security management, login security, book master, publisher master, member master, library card, general settings.
+
+* Transaction Module: Transaction module includes forms to issue, receive books and display the library transaction details.
+
+
+
+
+
+
+
+
+ 
+
+Problem Statement
+
+Requirements Summary
+The following preliminary lists are based on initial interviews
+Business Requirements
+The business goal for the application is to support an increase the productivity and complete automation of existing manual or semi automatic library management process. Business requirements are discussed in the Scope section, with the following additional detail:
+
+
+
+
+User Requirements
+User requirements are categorized by user type.
+
+System Users 
+* Able to search and view the member details.
+* Able to find all the information like book details, book and library card transaction details in one screen to give answer to member query.
+
+Supervisor
+
+* Update book and member details.
+* Modify library card details if required.
+
+
+
+Operational Requirements
+The following requirements provide a high-level view of how the system will run:
+
+* Processor usage should not exceed 80 percent during concurrent uses.
+* Backups will occur incrementally throughout the day.
+* A full weekly backup is required to WORM drives.
+* Ensure that information is easy to access either, and meaningful for the system users and the company.
+* Minimize the technical knowledge that systems users need to access the 
+
+System Architecture 
+
+High Level Solution Architecture
+
+
+
+
+
+High Level Solution Architecture of online Library Management System 
+
+Data Flow and Process Flow Chart
+
+
+User Profiles
+The following user types are expected for the Library Management System:
+* 
+* * * * * * * * 
+
+Usage Summary
+Library Management System Version 1.0 will address the following use cases. The complete usage scenarios will be completed during the information-gathering process.  Use cases will be created and prioritized.  Selected use cases will be expanded into usage scenarios and features that are derived from both use cases and the usage scenarios, as represented in the following diagram:
+
+
+
+Usage summary use case
+
+
+Software and Hardware Requirement
+
+   General Requirement for Server/Client:
+
+TypeSoftwareHardwareWork Station/ Node1. Windows XP
+2. JAVA
+1. P-4 
+2. RAM -256 MB 
+Database ServerMySQL
+1.P-4
+2.RAM- 2GB
+3.Hard Disk-160GB
+4.RAIDApplication Server1.Win 2000 Advance Server
+1.P-4
+2.RAM- 1GB
+3.Hard Disk-40GB
+
+
+
+Development Tools and Technologies
+
+Front End
+
+1. JAVA
+
+Why Java?
+
+
+
+
+
+
+
+Back End
+* MySQL
+
+Why MySQL?  
+
+
+
+
+ Development Environment
+1. NetBean
+2. MySQL Query Browser
+
+
+
+
+
+Design Goals and Constraints
+
+
+Library Management System Data Dictionary
+
+1. EmployeeMaster
+
+Sr.Field NameTypePrimary KeyForeign Key1E_IdNumberY2E_SnameText(50)3E_NameText(50)4E_FnameText(50)5E_ReligionText(50)6E_CasteText(50)7E_NationalityText(50)
+
+
+
+2. MemberMaster
+
+Sr.Field NameTypePrimary KeyForeign Key1HolderIDNumberY2DorDate/Time3TitleText
+
+
+
+
+
+
+3. AreaMaster
+
+Sr.Field NameTypePrimary KeyForeign Key1AreaTextY
+
+
+4. Category
+
+Sr.Field NameTypePrimary KeyForeign Key1CategoryTextY
+
+5. BookMaster
+
+Sr.Field NameTypePrimary KeyForeign Key1BookIdNumberY2TitleText3PublishYearNumber
+
+
+
+6. LibaryCardMaster
+
+Sr.Field NameTypePrimary KeyForeign Key1LibIDNumberY2HolderTypeText
+
+
+
+7. PublisherMaster
+
+Sr.Field NameTypePrimary KeyForeign Key1PubIDNumberY2CompanyNameText
+
+
+8. UserMaster
+
+Sr.Field NameTypePrimary KeyForeign Key1UM_NameNumberY
+
+
+9. Transcation
+
+Sr.Field NameTypePrimary KeyForeign Key1TrnNoNumberY2TypeText
+Library Management System– Data Schema ER Diagram
+
+
+
+
+
+
+eLibrary ER Diagram
+
+eLibrary DFD (Data Flow Diagram)
+
+Context Level DFD
+
+Context Flow Diagrams give us the complete details about the inputs and outputs for a given system.
+
+
+
+0 Level Data Flow Diagram
+
+
+
+1 Level Data Flow Diagram
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Planning and Scheduling
+
+
+Planning
+Planning is very important in every aspect of development work. Software project plan indicated scope of the project, milestones and deliverables, project estimates, resource allocation, risk management, scheduling techniques and quality control and standard.  Software project plan can be viewed as the following:
+
+
+
+
+Gantt chart:
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+PERT chart:
+
+ 
+
+
+
+
+Conclusion and future enhancement
+
+
+This project was developed to fulfill user and business requirement; however there are lots of scopes to improve the performance of the Library Management System in the area of user interface, database performance, and query processing time. Etc.
+
+So there are many things for future enhancement of this project. The future enhancements that are possible in the project are as follows.
+
+
+* Linking and integration of any legacy system for accounting.
+* Integration with bank database through Web Services
+* Connection to third-party OLAP applications
+* Implement Bar code reader
+* Web interface for members
+* In the area of data security and system security.
+* Provide more online tips and help.
+* To optimize the query which is embedded in the system.
+
+
+Bibliography
+
+Websites
+
+* http://www.google.com
+* http://www.microsoft.com
+* http://www.programmer2programmer.net
+* http://www.codeproject.com
+* http://www.msdn.com.
+* http://www.vb123.com
+* http://www.vbcode.com
+* http://www.sqltuner.com
+
+
+Books
+
+* Mastering Visual Basic 6 (Paperback) 
+* Mastering Visual Basic .NET (Paperback) 
+* Visual Basic Black Book (Paperback)
+* SQL Bible, 2nd Edition (Paperback)  
+* Database Development in Visual Basic 
+
+
+
+
+
+
+SYNOPSIS : JAVA Library Management System – P2P Library
+
+
+* 
+* 
+
+Mr. XXXX  CCCCCC, - MCA, Roll : 5405789016 ajprofessionals@gmail.com 
+

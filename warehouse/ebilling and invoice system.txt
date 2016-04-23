@@ -1,0 +1,251 @@
+﻿
+
+Project Synopsis
+
+
+
+
+
+EBILLING AND INVOICE SYSTEM	1
+PROJECT SYNOPSIS	1
+REVISION & SIGN-OFF SHEET	2
+VISION STATEMENT	1
+OPPORTUNITY STATEMENT	1
+SCOPE	1
+CUSTOMER, PRODUCTS, BILLING GENERATION	1
+REPORT GENERATION SYSTEM	2
+OUT OF SCOPE	2
+GOAL	3
+SOLUTION CONCEPT	3
+USER PROFILES	5
+USAGE SUMMARY	5
+REQUIREMENTS SUMMARY	7
+Business Requirements	7
+User Requirements	7
+Operational Requirements	8
+System Requirements	9
+SUCCESS CRITERIA	9
+Sales Automation	9
+FEATURES/FUNCTIONALITY	10
+USE CASES SUMMARY	12
+SOFTWARE AND HARDWARE REQUIREMENT	13
+General Requirement for Server/Client:	13
+DEVELOPMENT TOOLS AND TECHNOLOGIES	13
+DEVELOPMENT TOOLS AND TECHNOLOGIES	14
+FRONT END	14
+BACK END	14
+DEVELOPMENT ENVIRONMENT	15
+VISUAL DESIGN	16
+CONCEPTUAL DESIGN	16
+LOGICAL DESIGN	18
+PHYSICAL DESIGN	21
+ EBILLING AND INVOICE SYSTEM DATA DICTIONARY	22
+EBILLING AND INVOICE SYSTEM DATA DICTIONARY	23
+TABLE : PRODUCT_MASTER	23
+TABLE : BILL	23
+TABLE : BILL_DETAILS	24
+TABLE : COMPANY_MASTER	24
+TABLE : USER_MASTER	25
+EBILLING AND INVOICE SYSTEM – DATA SCHEMA ER DIAGRAM	26
+EBILLING AND INVOICE SYSTEM DFD (DATA FLOW DIAGRAM)	27
+
+
+Introduction
+The client uses MS Excel, and maintains their product list, customer list, and prints the invoice, however it is not possible them to share the data from multiple system in multi user environment, there is lot of duplicate work, and chance of mistake. When the product price are changed they need to update each and every excel file. There is no option to find and print previous saved invoice. There is no security; any body can access any report and sensitive data, also no reports to find out the sales volume, stock list, and summary report. This eBilling and invoicing system is used to overcome the entire problem which they are facing currently, and making complete atomization of manual billing and invoicing system
+
+Objective
+This section presents a conceptual overview of the solution, and then provides an introduction to its requirements.
+Solution Concept
+The eBilling and Invoice System consists of:
+
+* Customer, Products, Billing Generation: Automate the current manual bill generation system and maintain the searchable customer, products database and product invoice, maintain the data security, user rights.
+* Report Generation: A Report Generation system will be developed for the user and management of eBilling and Invoicing System. This MIS system will have both details and summary type reports for analysis the sales volume, sales trend, available stock
+
+Part of the solution will involve converting data from Microsoft Excel to the Database, system can import existing customer, product data from predefined MS Excel, CSV format. It reduces the data entry work and quick implementation of the system. 
+
+The following diagram describes the proposed solution architecture at a high level.
+
+ 
+
+
+High Level Solution Architecture
+
+
+User Profiles
+The following user types are expected for the eBilling and Invoicing System:
+
+UserBrief Description of Use ActionsSales RepresentativeDownloads and uploads customer and order information, which affects accounting, inventory and product data.  View customer and product data as described in metrics, track orders and deliveries.ManagerAll sales representative use actions, and management reports, quota establishment, reporting and adjustment.AccountantView and print stocks, track orders. Update product details like price.MIS ExecutiveGenerate reports, view and print inventory reports, view and print stock reports.
+Usage Summary
+eBilling and Invoicing System Version 1.0 will address the following use cases. The complete usage scenarios will be completed during the information-gathering process.  Use cases will be created and prioritized.  Selected use cases will be expanded into usage scenarios and features that are derived from both use cases and the usage scenarios, as represented in the following diagram:
+
+
+
+Usage summary use case
+
+
+
+
+ Features/Functionality
+
+The following sections summarize features and functionality described by use case. Please see bellow eBilling and Invoice System – Requirements
+
+
+Manage Customers - Analyze CustomersMust be able to analyze customer dataMust be able to sort customers Must be able to sort customers by amount of salesMust be able to sort customers by amount of sales of particular productsMust be able to identify sales trendsMust be able to identify drops in salesMust be able to identify drops in a customer's sales Manage OrdersSales representatives must be able to offer discount in an orderMust be able to create, track, revise, and cancel ordersMust be able to create an orderMust be able to track an orderMust be able to revise an orderMust be able to cancel an order Manage Products (Catalog, Categories)Must be able to browse productsMust be able to browse products by category Must be able to add a new productMust be able to edit an existing productCustomers must be able to search the databaseCustomers must be able to search the database by product typecustomers must be able to search the database by productThe system must have the capability to provide help  Manage UsersMust be able to record information about usersMust be able to search for employee informationMust be able to track information for each employeeMust be able to add/ modify user informationUser can change his/ her passwordMust be specify the user rights and privilege Management Information System / MIS ReportsAll users from all departments must be able to see reports from a central database as per their rights and privilegesAll reports can be exported in different formats like Text, CSV, Ms ExcelSystem should store historical data.System Should have automated backup procedure for disaster Network ManagementMust be able to monitor the network centrallyMust be able to monitor servers centrallyMust be able to monitor application server software centrallyMust be able to monitor databases centrally CEO RequirementsTo extend our product availability (Looks more like a business goal than a definable requirement.)Providing a no single point failure application (Looks more like a business goal than a definable requirement.)Reduce our costs by lowering customer handle time (Looks more like a business goal than a definable requirement.)Need to improve our sales volume (Looks more like a business goal than a definable requirement.)
+
+
+Use Cases Summary
+
+Software and Hardware Requirement
+
+   General Requirement for Server/Client:
+
+TypeSoftwareHardwareWork Station/ Node1. Windows XP
+2. VB Run time
+3. MS Office
+1. P-4 
+2. RAM -256 MB 
+Database Server1.Win2000 Advance Server
+1.P-4
+2.RAM- 2GB
+3.Hard Disk-160GB
+4.RAIDApplication Server1.Win 2000 Advance Server
+1.P-4
+2.RAM- 1GB
+3.Hard Disk-40GB
+
+
+
+Development Tools and Technologies
+
+Front End
+
+1. VB 6
+
+Why VB6?
+
+VB6 is built on the Windows Server System to take major advantage of the OS and which comes with a host of different servers which allows for building, deploying, managing and maintaining Windows Based solutions. The Windows Server System is designed with performance as priority and it provides scalability, reliability. 
+
+
+The advantage of VB.NET includes
+* Rapid Application Development (RAD) Support.
+* Powerful Windows-based Applications 
+* Simplified Deployment 
+* Powerful, Flexible, Simplified Data Access 
+* Improved Coding 
+* Direct Access to the OS Platform 
+* Object-Oriented Constructs 
+* COM Interoperability
+
+
+Back End
+1. MS Access
+
+Why MS Access?  
+MS Access is desktop RDMS support small application with all features like relational query, different data types, joins, and query. Includes
+* Easy to use and easy to deployment.
+* Integration with Windows OS
+* Scalability
+* Import and Export of data in all major database system.
+* Centralized Management
+* Reliability
+* Automating Tasks
+
+
+
+Development Environment
+1. Visual Studio 6.0
+
+eBilling and Invoice System Data Dictionary
+
+Table : product_master
+
+Owner:	dbo
+Destination DB name:	ebill
+Number of columns:	5
+Number of indexes:	2
+Number of foreign keys:	0
+Extended attributes:
+OnFileGroup	PRIMARY
+Clustered PK	Yes
+
+ColumnsData typeAllow NULLsValue/rangeSnointNot allowedProdTypenvarchar(60)Not allowedProdSubTypenvarchar(60)Not allowedRateintNot allowedisactivenvarchar(30)Not allowed
+IndexesTypeColumnsPK_ProductMaster_snoclustered, unique, primary key located on PRIMARYsno
+
+
+Table : bill
+
+Owner:	dbo
+Destination DB name:	ebill
+Number of columns:	15
+Number of indexes:	3
+Number of foreign keys:	0
+Extended attributes:
+OnFileGroup	PRIMARY
+Clustered PK	Yes
+
+ColumnsData typeAllow NULLsValue/rangesnointNot allowedinvoicenonvarchar(60)Not allowedcanmenvarchar(60)Not allowedInvoice_datedatetimeNot allowedlocationnvarchar(60)Not allowedchalan_nointNot allowedcustomer_namenvarchar(100)Not allowedCustomer_address1nvarchar(100)Not allowedCustomer_address2nvarchar(100)AllowedTotal_amtintNot alloweddiscountintNot allowedAmt_wordsnvarchar(100)Not allowedPaid_typenvarchar(60)Not allowedCheque_nonvarchar(60)AllowedEntry_datedatetimeNot allowed
+
+
+Table : bill_details
+
+Owner:	dbo
+Destination DB name:	ebill
+Number of columns:	6
+Number of indexes:	3
+Number of foreign keys:	2
+Extended attributes:
+OnFileGroup	PRIMARY
+Clustered PK	Yes
+
+ColumnsData typeAllow NULLsValue/rangesnointNot allowedBill_snointNot allowedProd_snonvarchar(60)Not allowedqtydatetimeNot allowedratenvarchar(60)Not allowedamtintNot allowed
+
+
+Table : Company_master
+
+Owner:	dbo
+Destination DB name:	ebill
+Number of columns:	7
+Number of indexes:	2
+Number of foreign keys:	0
+Extended attributes:
+OnFileGroup	PRIMARY
+Clustered PK	Yes
+
+ColumnsData typeAllow NULLsValue/rangeCompany_namenvarchar(60)Not allowedAddress1nvarchar(100)Not allowedAddress2nvarchar(100)Allowedcitynvarchar(60)Not allowedpinintNot allowedtelephonenvarchar(60)Not allowedvatnonvarchar(60)Not allowed
+
+Table : user_master
+
+Owner:	dbo
+Destination DB name:	ebill
+Number of columns:	3
+Number of indexes:	2
+Number of foreign keys:	0
+Extended attributes:
+OnFileGroup	PRIMARY
+Clustered PK	Yes
+
+ColumnsData typeAllow NULLsValue/rangeuser_namenvarchar(60)Not allowedUser_passwordnvarchar(60)Not allowedUser_typenvarchar(60)Allowed
+
+
+
+
+
+eBilling and Invoice System – Data Schema ER Diagram
+
+
+
+www.programmer2programmer.net
+
+
+
+
+1/17
+
+
+
+
+
+
+1
+	
+

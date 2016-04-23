@@ -1,0 +1,32 @@
+﻿Active Chat Monitoring and Suspicious Chat Detection over Internet
+
+
+A lot of terrorist activities and groups communicate over apps and chat programs over the internet. They also use these chat application over the internet for getting their message to young generation and making new terrorists. Well we here propose a internet chat application that actively monitors various chats going on and also alerts the admin about any suspicious chat process taking place. The system is built to process all chats taking place over and saving them with history. The chat process is handled by server. As data passes through server it continuously scans it for any suspicious keywords. The admin may however keep a watch at any chat he desires. A special alert is provided to the admin regarding any suspicious chat that is processed at the server. The admin may now watch that particular chat. The system also provides the I P address of both the chatting parties for further location tracking of those involved. This chat monitor is an important application that could allow for secure chats along with terrorism related chat detection that helps track down spread of terrorist networks and locate them using ip addresses. Our internet chat application is a dedicated chat application for free internet chat as well as tracking down on spread of terrorism online.
+
+
+Software Requirements:
+• Windows 7 
+• Sql 2008
+• Visual studio 2010
+
+Hardware Components:
+• Processor – Dual Core
+• Hard Disk – 50 GB
+• Memory – 1GB RAM
+Advantages:
+• Keeps an Eye on any suspicious activities.
+• Main Advantage of this System is that users will not know that they are being checked. 
+
+Disadvantage:
+• It will track for that word even if the statement is not mentioned in that way.  
+• Users have to use provided chat application.
+
+Applications:
+• This system can be used by government officials to check any suspicious activities.
+• It can be also used by private detective companies. 
+
+Reference:
+http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=5361099&queryText%3DChat+Monitoring
+http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=4670827&queryText%3DChat+Monitoring
+http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=5302027&queryText%3DChat+Monitoring
+

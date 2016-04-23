@@ -1,0 +1,483 @@
+Mail to ajprofessionals@gmail.com for complete project synopsis, project report, source code and database 
+or visit for more details
+ http://www.readymadeproject.com/aj/academic_project_list.htm
+
+
+WCPS
+Web Based Claims Processing System
+
+Synopsis
+
+Submitted by
+Mr. XXX XXXXXXX
+
+
+
+in partial fulfillment for the award of the degree
+
+of
+
+ 
+MCA (Master of Computer Application)
+
+IN
+
+MUMBAI
+
+
+XXX Engineering College
+
+
+
+
+
+
+
+
+TABLE OF CONTENTS
+
+1. PROBLEM DEFINITION AND SCOPE OF PROJECT	5
+1.1 Purpose	5
+1.2 Objective	6
+1.3 Project Scope	7
+1.4 Technologies	7
+1.4.1 Operating Environment	7
+1.4.2 Deployment Environment	8
+1.4.3 Development Tools and Technologies	9
+1.4.4 Development Environment	12
+2. OVERALL DESCRIPTION	13
+2.1 User Characteristics	13
+2.1.1 Employee	13
+2.1.2 CPD - Claims Processing Department	13
+2. 2.Assumptions	13
+3. SYSTEM FEATURES	14
+3. 1.Systern features	14
+3.1.1 .Description:	14
+3.1 .2.Constraints	14
+4. PRELIMINARY DESIGN	15
+4.1   Use Case	15
+4.2 Specification of actors	16
+4.2.1 Employee	16
+4.2.2 CPD - Claims Processing Department	16
+4.3 Specification of Use Cases	17
+4.3.1 Use Case 	 Manage Employee	17
+4.3.2 Use Case. 	 Apply Claim	19
+4.3.3 Use Case. 	 Approve Claim	21
+4.3.4 Use Case. 	 System Login	23
+4.4 Process Flow Chart	25
+4.5 ER DIAGRAM 1	26
+4.6 ER DIAGRAM 2	27
+4.7 DATA DICTIONARY	28
+4.7.1 Table: emp_master	28
+4.7.2 Table: emp_claims	29
+4.7.3. Table: emp_security	30
+4.7.4 Table: department	31
+4.7.5. Table: designation	31
+4.8 Data Flow Diagram DFD	33
+4.8.1 Context Level	33
+4.8.2 Level 1 (High Level Diagram)	34
+5. FUTURE ENHANCEMENT	35
+6. BIBLIOGRAPHY	36
+6.1 Websites	36
+6.2 Books	36
+
+
+
+
+
+
+1. Problem Definition and scope of project
+
+1.1 Purpose
+
+ABC is a company which is having employee strength of at least 1000. All the employees are provided medical reimbursement facility which means that the expenditure incurred by the employee for treatment is reimbursed by the company. For reimbursement, the employee needs to fill in a form detailing the treatment undertaken which includes the name & cost of medicines, laboratory tests, surgery. The form is duly signed by the employee and it will be sent to the concerned Claims Processing Department (CPD) by messenger for processing. CPD will process it and the order regarding the reimbursement is sent to the Cash counter (CC) where in the employee can come and receive the reimbursement amount.
+
+Some of the problems associated with the above mentioned process are listed below:
+
+* The form may miss during transit
+* The form is prone to weariness due to which the company may not be able to read data in it after some years.
+* The employees who claimed for medical reimbursement need to visit the CC from time to time enquiring about the status of their application. This results in enormous wastage of time of the employee.
+
+To overcome these problems, it is proposed to develop a software titled Web Based Claims Processing System (WCPS) which is web based so that the employee can fill the form online and submit it so that the form is sent to CPD through Internet. At CPD, the form needs to be checked automatically by a program which will compute the amount that needs to be reimbursed to the employee for the treatment undertaken. Any excess amount claimed by the employee is ignored by the software. The amount computed will be routed to the e-mail account of the employee as well as to the Bank which holds the accounts of all the employees of the company. The bank will credit the amount to the account of the employee based on the mail.
+
+This project report describes the software functional and nonfunctional requirements for release 1.0 of the Web Based Claim Processing System. This document is intended to be used by the members of the project team that will implement and verify the correct functioning of the system. Unless otherwise noted, all requirements specified here is high priority and committed for release 1.0.
+
+
+
+1.2 Objective
+
+Web Based Claims Processing System (WCPS) is complete end to end solution to cover all aspects of online claim and reimbursement system.
+
+The basic objective of developing this project is:
+
+* Provides complete web site solution, including employee registration, enter new claim, approve/ reject claim. Complete web based administration.
+
+* The Web Based Claims Processing System can automatically display pending claim count in the main page of employee of Claims Processing Department (CPD).
+
+* Employee can view their claim status online and all claims can be treated as Pending, Approved and Rejected.
+ 
+* Employee of CPD can add, edit employee details, all employees are identified by the employee no. Employee no will be unique throughout the system. 
+
+* System must store audit trail of all DML transaction, like it stores employee no, time stamp in the database for add, edit, delete operation.
+
+* System should capture lat login time for all the employees.
+
+* Complete web based system no installation required to run the application in client system.
+
+* Employee must able to view his/her previous claim details.
+
+
+1.3 Project Scope
+
+The Web Based Claims Processing System (WCPS) will permit to enter new claim, track the claim status and maintaining master information. The main users of the project are Employee of all departments and Employee of CPD – Claim Processing Department.
+
+From an end-user perspective, the Web Based Claims Processing System Project consists of two functional elements: enhanced Employee modules for Login, Apply for new claim, view status of already applied claim. And CPD module for approve/reject claim, view pending status, Add/Edit employee details.
+
+
+1.4 Technologies
+
+	1.4.1 Operating Environment
+	
+OE-1: 	The WCPS web application will operate with the following Web Browsers: Microsoft Internet Explorer version 5.0, 6.0. 7.0
+
+OE-2: 	The WCPS web application shall operate on a server running the latest versions of IIS (Internet Information Server).
+
+OE-3:	The WCPS web application shall permit user access from Internet connection 
+
+OE-4:	Operating System: Windows 2000. XP
+
+OE-5:	Software requirements: SQL Server 2005, .net framework 2.0.
+
+OE-6:	Languages used are asp.net using c# and scripting is done using JavaScript.
+
+OE-7:	Hardware Requirements: 256(minimum)/512(recommended) MB RAM
+
+OE-8:	Hard disc- nGB depending upon the requirement to store data minimum of 25GB.
+		
+	
+
+1.4.2 Deployment Environment
+	
+DE-1: 	Database Server 
+	OS – Win 2003 Enterprise Server
+	SQL Server 2005
+	HDD – Min 10 GB, Recommended 25 GB
+	RAM – Min 2 GB, Recommended 4 GB
+	Processor - Pentium Dual Xenon Processor
+
+DE-2: 	Application Server 
+	OS – Win 2003 Enterprise Server
+	IIS – Internet Information Server
+	HDD – Min 5 GB, Recommended 10 GB
+	RAM – Min 2 GB, Recommended 4 GB
+	Processor - Pentium Dual Xenon Processor
+
+
+DE-3: 	The WCPS web application will operate with the following Web Browsers: Microsoft Internet Explorer version 5.0, 6.0. 7.0.
+
+
+
+
+
+
+	[Web Based Claims Processing System (WCPS) System Architecture]
+
+
+
+
+1.4.3 Development Tools and Technologies
+      
+DT-1:	ASP.Net
+As we need to develop Web Application for Web Based Claims Processing System (WCPS). We will use ASP.Net as it is the new Microsoft technology to develop any application which support and integrate other server product for the internet. By ASP.Net we can develop in web application by .NET framework and manage environment with any .NET support language like VB.Net and C#.
+      	
+      DT-2: C#
+.NET is built on the Windows Server System to take major advantage of the OS and which comes with a host of different servers which allows for building, deploying, managing and maintaining Web-based solutions. The Windows Server System is designed with performance as priority and it provides scalability, reliability, and manageability for the global, Web-enabled enterprise. The Windows Server System integrated software products are built for interoperability using open Web standards such as XML and SOAP.
+.NET is a "Software Platform". It is a language-neutral environment for developing rich .NET experiences and building applications that can easily and securely operate within it. When developed applications are deployed, those applications will target .NET and will execute wherever .NET is implemented instead of targeting a particular Hardware/OS combination. The components that make up the .NET platform are collectively called the .NET Framework. 
+
+The .NET Framework is a managed, type-safe environment for developing and executing applications. The .NET Framework manages all aspects of program execution, like, allocation of memory for the storage of data and instructions, granting and denying permissions to the application, managing execution of the application and reallocation of memory for resources that are not needed. 
+The .NET Framework is designed for cross-language compatibility. Cross-language compatibility means, an application written in Visual Basic .NET may reference a DLL file written in C# (C-Sharp). A Visual Basic .NET class might be derived from a C# class or vice versa. 
+The .NET Framework consists of two main components: 
+Common Language Runtime (CLR)
+Class Libraries
+
+The advantage of C# includes
+Powerful Windows-based Applications 
+Building Web-based Applications 
+Simplified Deployment 
+* Powerful, Flexible, Simplified Data Access 
+* Improved Coding 
+* Direct Access to the Platform 
+* Full Object-Oriented Constructs 
+* XML Web Services 
+* COM Interoperability
+      
+      
+      
+      DT-3: SQL Server 2005
+WCPS Application uses SQL Server 2005 as storing the data. Microsoft SQL Server 2005 as our database and it has so many features which is ideal for our dot net based application. Features Includes
+* Support for Multiple Platforms
+* Integration with Windows Back office servers
+* Integration with Microsoft .NET Enterprise Servers
+* Scalability
+* Replication
+* Centralized Management
+* Reliability
+* Automating Tasks
+
+
+      
+1.4.4 Development Environment
+      
+DE-1:	1.Visual Studio 2005 IDE
+Most advanced integrated development environment for developing .NET application. Microsoft Visual Studio is an integrated development environment (IDE) from Microsoft. It can be used to develop console and graphical user interface applications along with Windows Forms applications, web sites, web applications, and web services in both native code together with managed code for all platforms supported by Microsoft Windows, Windows Mobile, Windows CE, .NET Framework, .NET Compact Framework and Microsoft Silverlight.
+Visual Studio includes a code editor supporting IntelliSense as well as code refactoring. The integrated debugger works both as a source-level debugger and a machine-level debugger. Other built-in tools include a forms designer for building GUI applications, web designer, class designer, and database schema designer. It allows plug-ins to be added that enhance the functionality at almost every level - including adding support for source control systems (like Subversion and Visual SourceSafe) to adding new toolsets like editors and visual designers for domain-specific languages or toolsets for other aspects of the software development lifecycle (like the Team Foundation Server client: Team Explorer).
+
+Visual Studio supports languages by means of language services, which allow any programming language to be supported (to varying degrees) by the code editor and debugger, provided a language-specific service has been authored. Built-in languages include C/C++ (via Visual C++), VB.NET (via Visual Basic .NET), and C# (via Visual C#). Support for other languages such as Chrome, F#, Python, and Ruby among others has been made available via language services which are to be installed separately. It also supports XML/XSLT, HTML/XHTML, JavaScript and CSS. Language-specific versions of Visual Studio also exist which provide more limited language services to the user. These individual packages are called Microsoft Visual Basic, Visual J#, Visual C#, and Visual C++.
+
+2. Overall Description
+
+2.1 User Characteristics
+
+2.1.1 Employee
+Able to login, apply for new claim, view claim status, change password.
+
+
+2.1.2 CPD - Claims Processing Department 
+CPD Employee can add new employee, edit employee details, approve / reject claim, view status, change his/her own password.
+
+
+
+
+2. 2.Assumptions
+
+1) CPD and Employees communicate with each other via emails.
+
+
+3. System Features
+
+3. 1.Systern features
+
+3.1.1 .Description:
+Proposed to develop a software titled Web Based Claims Processing System (WCPS) which is web based so that the employee can fill the form online and submit it so that the form is sent to CPD through Internet. At CPD, the form needs to be checked automatically by a program which will compute the amount that needs to be reimbursed to the employee for the treatment undertaken. Any excess amount claimed by the employee is ignored by the software. The amount computed will be routed to the e-mail account of the employee as well as to the Bank which holds the accounts of all the employees of the company. The bank will credit the amount to the account of the employee based on the mail.
+
+3.1 .2.Constraints
+Linking and integration with other legacy system for data sharing. Connecting to third-party OLAP applications for generating reports.  Etc.
+
+
+
+
+4. Preliminary Design
+4.1   Use Case
+Web Based Claims Processing System (WCPS) 1.0 will address the following use cases. The complete usage scenarios will be completed during the information-gathering process.  Use cases will be created and prioritized.  Selected use cases will be expanded into usage scenarios and features that are derived from both use cases and the usage scenarios, as represented in the following diagram:
+
+
+
+[Web Based Claims Processing System (WCPS) Usage Scenario – This usage scenario, or scenario for short, describes a real-world example of how one or more people or organizations interact with Web Based Claims Processing System (WCPS).  It describes the steps, events, and/or actions which occur during the interaction.  This Usage scenarios indicating exactly how someone works with the user interface, or reasonably high level describing the critical business actions but not the indicating how they’re performed.  ]
+
+
+4.2 Specification of actors
+
+The following actors are defined so far in the analysis phase of the Web Based Claims Processing System (WCPS) development process.
+4.2.1 Employee
+EmployeeElementDetailsDescriptionAn employee is a user of the Web Based Claims Processing System (WCPS) system.ExamplesAn Employee apply for new claim and view the status of his/her own claim. 
+
+
+4.2.2 CPD - Claims Processing Department
+CPD - Claims Processing DepartmentElementDetailsDescriptionThe CPD is the person who can approve / reject claim applied by the employee.ExamplesCPD updates the claim status and his/her remark for a claim.
+4.3 Specification of Use Cases
+4.3.1 Use Case 		Manage Employee
+Manage EmployeeElementDetailsActorCPDTriggerEmployee is not registered in the System and the CPD wish to Add new employee into the WCPS.Pre ConditionsEmployee no is not listed in the system. CPD opens the new employee page, and the new employee page is displayed.Post ConditionsEmployee is registered in the system, new employee no is generated.Normal course1. New Employee page appears on the screen
+2. System increment the last registered Employee No by 1 to get the No for the new employee.
+3. CPD  fill in the Employee’s  information including Name, Department, Designation, Date of Birth, Email ID, Adress(es),  Phone number(s), 
+4. System updateAlternative courses3a.  Not all mandatory data fields are filled
+   3a1.Employee fills in the missing data fields         
+
+Use Case Diagram : Manage Employee
+
+
+
+
+
+
+
+
+[Use Case: Manage Employee – This use case scenario, or scenario for short, describes how CPD will add new employee into Web Based Claims Processing System (WCPS).  It describes the steps, events, and/or actions which occur during the interaction.  This Usage scenarios indicating exactly how someone works with the employee  registration interface. ]
+
+
+4.3.2 Use Case. 		Apply Claim
+
+Mange Question BanksElementDetailsActorEmployeeTriggerApply for new claimPre ConditionsEmployee wish to apply for new claim and having login rights to WCPS.Post ConditionsNew claim is saved, and details are listed in pending claim details.Normal Event Flow1. The employee open the new claim page
+2. Employee select claim type. Enter amount, and remark.
+3. Employee update the System by confirming the data entered into the new claim form.
+4. System saved the claim and display claim details in pending lists.Variations3a.    Mandatory fields in the claim form are missing
+    3a1.  The system reject the entry and system update with an error message about missing mandatory fields.
+
+Use Case Diagram: Apply Claim
+
+
+
+
+
+
+
+
+
+[Use Case: Apply Claim – This use case scenario, or scenario for short, describes how employee will apply new claim into Web Based Claims Processing System (WCPS).  It describes the steps, events, and/or actions which occur during the interaction. ]
+
+
+4.3.3 Use Case. 		Approve Claim
+
+Approve ClaimElementDetailsActorCPDTriggerCPD staff wants to approve claimPre ConditionsThe CPD staff must register into the system, the CPD is logged into the system, and the system display pending list for claim need to approve.Post ConditionsClaim status is updated and Employee can view the status of his / her claim.  
+Normal event flow1. CPD logged in.
+2. System displays all pending claim details.
+3. CPD selects the claim, view the details
+4. CPD updated the claim status, like approved / reject, enters remarks.
+5. CPD logged out from the system.VariationsNA
+
+Use Case Diagram: Approve Claim
+
+
+
+
+[Use Case: Approve Claim – This use case scenario, or scenario for short, describes how CPD staff approved claim in Web Based Claims Processing System (WCPS).  It describes the steps, events, and/or actions which occur during the interaction. ]
+
+4.3.4 Use Case. 		System Login
+System LoginElementDetailsActorEmployee, CPDTriggerThe user wish to start using the system.Pre ConditionsThe user is not logged into the system.Post ConditionsThe user is logged into the system, and the system menu is displayed. Normal course1. The user click the link for theWCPS and a login page appear on the screen.
+2. The user types his username and password into the form and press the login button.
+3. The system confirms that the user is logged on.Alternative courses 2a.  The user is not a valid user or the user name or the password is 
+         mistyped.
+     2a1.  The system reject login with an error message that express wrong
+               login name or password. 
+
+Use Case Diagram: System Login
+
+
+
+
+
+
+
+[Use Case: System Login – This use case scenario, or scenario for short, describes how actors will perform login Web Based Claims Processing System (WCPS).  It describes the steps, events, and/or actions which occur during the interaction. ]
+
+4.4 Process Flow Chart
+
+
+
+
+
+4.5 ER Diagram 1
+
+Mail to ajprofessionals@gmail.com for complete project synopsis, project report, source code and database 
+or visit for more details
+ http://www.readymadeproject.com/aj/academic_project_list.htm
+
+
+4.6 ER Diagram 2
+
+
+
+
+
+4.7 Data Dictionary
+
+4.7.1 Table: emp_master
+
+
+
+[emp_master table is used to store employee details ]
+
+4.7.2 Table: emp_claims
+
+
+
+[emp_claims table is used to store claim details]
+
+
+
+
+4.7.3. Table: emp_security
+
+
+
+
+[emp_security table is used to login information of the employee]
+
+
+
+4.7.4 Table: department
+
+
+
+[Table department is used to store department details]
+
+
+
+
+4.7.5. Table: designation
+
+
+
+[Table designation is used to store designation details.]
+
+
+
+
+
+4.8 Data Flow Diagram DFD
+
+A data-flow diagram (DFD) is a graphical representation of the "flow" of data through an information system. DFDs can also be used for the visualization of data processing (structured design). On a DFD, data items flow from an external data source or an internal data store to an internal data store or an external data sink, via an internal process.
+
+
+4.8.1 Context Level
+
+
+Mail to ajprofessionals@gmail.com for complete project synopsis, project report, source code and database 
+or visit for more details
+ http://www.readymadeproject.com/aj/academic_project_list.htm
+
+
+5. Future Enhancement
+
+
+This project was developed to fulfill user requirement; however there are lots of scope to improve the performance of the Web Based Claims Processing System (WCPS) in the area of user interface, database performance, and query processing time. Etc.
+
+So there are many things for future enhancement of this project. The future enhancements that are possible in the project are as follows.
+
+
+* Linking and integration of other online web sites.
+* Integration with other legacy accounting database through Web Services
+* Connection to third-party OLAP applications
+* In the area of data security and system security.
+* Provide more online tips and help.
+* To optimize the query which is embedded in the system.
+
+
+6. Bibliography
+
+6.1 Websites
+Following websites are referring to create this project reports.
+* http://www.google.com
+* http://www.microsoft.com
+* http://www.programmer2programmer.net
+* http://www.codeproject.com
+* http://www.asp.net
+* http://www.asp123.com
+* http://www.wikipedia.org 
+
+
+6.2 Books
+Following books and ebook are used to complete this project reports.
+* Mastering C# (Paperback) 
+* SQL Server Bible (Paperback) 
+* .NET Black Book (Paperback)
+* Professional C#, 2nd Edition (Paperback)  
+* Professional ASP.NET (Paperback) 
+* MCAD/MCSD Self-Paced Training Kit: Developing Web Applications with Microsoft® Visual Basic® .NET and Microsoft Visual C#® .NET, Second Edition 
+* MCAD/MCSE/MCDBA Self-Paced Training Kit: Microsoft SQL Server 2000 Database Design and Implementation, Exam 70-229, Second Edition
+
+
+
+Synopsis: Web Based Claims Processing System (WCPS)
+
+1/20
+

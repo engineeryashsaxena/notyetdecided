@@ -1,0 +1,174 @@
+
+
+
+
+
+
+
+
+
+STEGANOGRAPHY 
+(A new technique to hide information within image file)
+SYNOPSIS
+
+STEGANOGRAPHY 
+(A new technique to hide information within image file)
+
+Submitted by
+Mr. Atanu Maity
+
+
+in partial fulfillment for the award of the degree
+
+of
+ 
+MCA (Master of Computer Application)
+
+IN
+
+MUMBAI
+XXX Engineering College
+XXXXXX University : XXXXX - 400001
+
+
+                                   
+
+ ABSTRACT
+
+Steganography is the art of hiding the fact that communication is taking place, by hiding information in other information. Many different carrier file formats can be used, but digital images are the most popular because of their frequency on the internet. For hiding secret information in images, there exists a large variety of steganography techniques some are more complex than others and all of them have respective strong and weak points. Different applications may require absolute invisibility of the secret information, while others require a large secret message to be hidden. This project report intends to give an overview of image steganography, its uses and techniques. It also attempts to identify the requirements of a good steganography algorithm and briefly reflects on which steganographic techniques are more suitable for which applications.
+
+
+INTRODUCTION
+
+One of the reasons that intruders can be successful is the most of the information they acquire from a system is in a form that they can read and comprehend. Intruders may reveal the information to others, modify it to misrepresent an individual or organization, or use it to launch an attack. One solution to this problem is, through the use of steganography. Steganography is a technique of hiding information in digital media. In contrast to cryptography, it is not to keep others from knowing the hidden information but it is to keep others from thinking that the information even exists.
+Steganography become more important as more people join the cyberspace revolution.  Steganography is the art of concealing information in ways that prevents the detection of hidden messages. Stegranography include an array of secret communication methods that hide the message from being seen or discovered.
+Due to advances in ICT, most of information is kept electronically. Consequently, the security of information has become a fundamental issue. Besides cryptography, streganography can be employed to secure information. In cryptography, the message or encrypted message is embedded in a digital host before passing it through the network, thus the existence of the message is unknown. Besides hiding data for confidentiality, this approach of information hiding can be extended to copyright protection for digital media: audio, video and images.
+The growing possibilities of modern communications need the special means of security especially on computer network. The network security is becoming more important as the number of data being exchanged on the internet increases.  Therefore, the confidentiality and data integrity  are requires to protect against unauthorized access and use. This has resulted in an explosive growth of the field of information hiding
+Information hiding is an emerging research area, which encompasses applications such as copyright protection for digital media, watermarking, fingerprinting, and steganography.
+	In watermarking applications, the message contains information such as owner identification and a digital time stamp, which usually applied for copyright protection.
+	Fingerprint, the owner of the data set embeds a serial number that uniquely identifies the user of the data set. This adds to copyright information to makes it possible to trace any unauthorized used of the data set back to the user.
+	Steganography hide the secrete message within the host data set and presence imperceptible and is to be reliably communicated to a receiver. The host data set is purposely corrupted, but in a covert way, designed to be invisible to an information analysis.
+                                     
+
+SYNOPSIS
+
+Project Name:           STEGANOGRAPHY
+
+Project Members:
+
+This project is done in a group of two people. Project members are.
+1. Atanu Maity
+2. Prabha Choudhary
+
+What is Steganography?
+Steganography is the practice of hiding private or sensitive information within something that appears to be nothing out to the usual. Steganography is often confused with cryptology because the two are similar in the way that they both are used to protect important information. The difference between two is that steganography involves hiding information so it appears that no information is hidden at all. If a person or persons views the object that the information is hidden inside of he or she will have no idea that there is any hidden information, therefore the person will not attempt to decrypt the information.
+What steganography essentially does is exploit human perception, human senses are not trained to look for files that have information inside of them, although this software is available that can do what is called Steganography. The most common use of steganography is to hide a file inside another file.
+
+History of Steganography:
+Through out history Steganography has been used to secretly communicate information between people.
+Some examples of use of Steganography is past times are:
+1. During World War 2 invisible ink was used to write information on pieces of paper so that the paper appeared to the average person as just being blank pieces of paper. Liquids such as milk, vinegar and fruit juices were used, because when each one of these substances are heated they darken and become visible to the human eye.
+2. In Ancient Greece they used to select messengers and shave their head, they would then write a message on their head. Once the message had been written the hair was allowed to grow back. After the hair grew back the messenger was sent to deliver the message, the recipient would shave off the messengers hair to see the secrete message.
+3. Another method used in Greece was where someone would peel wax off a tablet that was
+
+
+
+Why This Steganography?
+This technique is chosen, because this system includes not only imperceptibility but also un-delectability by any steganolysis tool.
+
+Project Scope: 
+This project is developed for hiding information in any image file. The scope of the project is implementation of steganography tools for hiding information includes any type of information file and image files and the path where the user wants to save Image and extruded file.
+
+Methodology:
+User needs to run the application. The user has two tab options – encrypt and decrypt. If user select encrypt, application give the screen to select image file, information file and option to save the image file. If user select decrypt, application gives the screen to select only image file and ask path where user want to save the secrete file.
+This project has two methods – Encrypt and Decrypt.
+In encryption the secrete information is hiding in with any type of image file.
+Decryption is getting the secrete information from image file.
+     
+
+Software Requirements:
+* .NET Framework 3.5
+
+Hardware Requirements:
+      Processor: Preferably 1.0 GHz or Greater.
+      RAM      : 512 MB or Greater.
+
+
+
+					
+                                                         
+
+
+
+Encryption Process
+
+        IMAGE FILE			                   INFORMATION FILE
+                                                    
+          
+       					BMP FILE
+                                    
+
+
+
+
+
+
+
+
+Decryption Process
+
+                                                                     BMP FILE
+                                             
+
+   INFORMATION FILE                                                                   IMAGE FILE	
+                                               
+
+
+
+
+
+
+
+
+
+Limitations of the Software:
+This project has an assumption that is both the sender and receiver must have shared some secret information before imprisonment. Pure steganography means that there is none prior information shared by two communication parties.
+
+ 
+
+Summary
+
+Steganography is a really interesting subject and outside of the mainstream cryptography and system administration that most of us deal with day after day.
+Steganography can be used for hidden communication. We have explored the limits of steganography theory and practice. We printed out the enhancement of the image steganography system using LSB approach to provide a means of secure communication. A stego-key has been applied to the system during embedment of the message into the cover image. 
+This steganography application software provided for the purpose to how to use any type of image formats to hiding any type of files inside their. The master work of this application is in supporting any type of pictures without need to convert to bitmap, and lower limitation on file size to hide, because of using maximum memory space in pictures to hide the file.
+Since ancient times, man has found a desire in the ability to communicate covertly. The recent explosion of research in watermarking to protect intellectual property is evidence that steganography is not just limited to military or espionage applications. Steganography, like cryptography, will play an increasing role in the future of secure communication in the “digital world”.
+
+Bibliography
+
+Websites
+Following websites are referring to create this project reports.
+* http://www.google.com
+* http://www.microsoft.com
+* http://www.programmer2programmer.net
+* http://www.codeproject.com
+* http://www.asp.net
+* http://www.asp123.com
+* http://www.wikipedia.org 
+
+
+Books
+Following books and ebook are used to complete this project reports.
+* Mastering C# (Paperback) 
+* SQL Server Bible (Paperback) 
+* .NET Black Book (Paperback)
+* Professional C#, 2nd Edition (Paperback)  
+* Professional ASP.NET (Paperback) 
+* MCAD/MCSD Self-Paced Training Kit: Developing Web Applications with Microsoft® Visual Basic® .NET and Microsoft Visual C#® .NET, Second Edition 
+* MCAD/MCSE/MCDBA Self-Paced Training Kit: Microsoft SQL Server 2000 Database Design and Implementation, Exam 70-229, Second Edition
+
+
+
+
+
+
+

@@ -1,0 +1,121 @@
+﻿
+TITLE: “ NOT YET DECIDED”
+TEAM:
+	Team Leader: Ankur Chauhan 
+	Team Members:
+No.Roll No.Student NameMobile No.Email1.1206413015Ankur Chauhan9411084380nkrchauhan93@gmail.com2.1206413097Utkarsh Sudhakar8410417009sudhakar.utkarsh9@gmail.com3.1206413104Yash Saxena8979599059mailtoyash9309@gmail.com			
+PROJECT SUMMARY:	
+1.Functional Features* User Interest Profile Generation.
+* Pattern analysis of previous projects by Clustering.
+* Recommendation of Projects based on User Interest Profile. 
+2.Technologies to be usedBig Data,Machine Learning,Recommender System,NOSQL,Python3.Tools to be UsedApache Spark (BigData processing engine) , Ipython (IDE), Django,Flask (framework for web development),Windows (platform).Introduction 
+In this modern world when technology is at its boom and the need of engineers is very high, there is one thing which every student needs to focus on is a Project which best describes his/her skill set.
+Students want to choose projects that are not only interesting, but are also unique from other projects chosen by current and past students. 
+Our aim would be to build profiles of student’s genuine interests and skills and use them to make project recommendations. The profiles would help the system filter out the projects that are not of interest to the user. A new project may also be recommended to the user if it matches his/her interest, even if the project has not been clicked on by other users.
+
+Our work attempts to address this problem by using text analysis and clustering to organize past projects. The distribution of projects changes over time and provides insight into where student interests lie and how the field is evolving. As a result, our work will be able to identify popular topics worked on by many students, and recommends the most unique projects that have been submitted over the years but best suits the profile of the student. 
+
+          
+Source:Reference [1]
+
+
+
+
+Statement about the Problem
+
+* Most of the students are unable to explore their inclination towards their field of interests.
+* Students who know their interest have difficulty to find the best projects of their interest at a single place.
+
+
+Why is the particular topic chosen?
+Students like working in the field of their interests. So this will be a platform for students to choose a project related to their field of interest.
+
+Objective and Scope
+Students mostly get confused  due to the various emerging technologies and are unable to identify their interest so our objective is to generate a profile based on past activities  of the students and recommend the projects which best suits their  personality.
+Scope:
+* Distribution analysis of technology changes overtime.
+* Generation of student profile.
+* Recommendation of Project.
+* Recommendation of Courses.
+* Recommendation of Research Papers.
+Limited Content Analysis (Analytical Boundary): Content-based technique used in our project have a natural limit in the number and type of features that are associated, whether automatically or manually, with the objects they recommend. It cannot provide suitable suggestions if the analyzed content does not contain enough information to discriminate items the student likes from items the student does not like.
+
+Over Specialization (Conceptual Boundary): Content-based recommenders have no inherent method for finding something unexpected. Our system suggests projects whose scores are high when matched against the student profile, hence the student is going to be recommended projects similar to those already rated.
+
+
+Functional Features of the project.
+
+* User Interest Profile Generation.
+* Pattern analysis of previous projects by Clustering.
+* Recommendation of Projects based on User Interest Profile. 
+
+
+Methodology
+
+1. Content based recommender system
+Content-based recommender systems work with profiles of users that are created at the beginning. A profile has information about a user and his taste. Taste is based on how the user rated items. Generally, when creating a profile, recommender systems make a survey, to get initial information about a user in order to avoid the new-user problem. In the recommendation process, the engine compares the items that were already positively rated by the user with the items he didn’t rate and looks for similarities. Those items that are mostly similar to the positively rated ones, will be recommended to the user. There are different algorithms of measuring similarities among items in data base and those in user’s profile. One of such approaches is cosine similarity. Representing items as vectors on a coordinate space it measures angles between vectors and gives out their cosine value
+
+Source:Reference [1]
+
+
+2.Collaborative Filtering
+The idea of collaborative filtering is in finding users in a community that share appreciations . If two users have same or almost same rated items in common, then they have similar tastes. Such users build a group or a so called neighborhood. A user gets recommendations to those items that he/she hasnt rated before, but that were already positively rated by users in his/her neighborhood.
+
+Source:Reference [1]
+3.Hybrid Recommendation approaches
+For better results some recommender systems combine different techniques of collaborative approaches and content based approaches .The combination of approaches can proceed in different ways :
+ 1) Separate implementation of algorithms and joining the results.
+ 2) Utilize some rules of content-based filtering in collaborative approach. 
+3) Utilize some rules of collaborative filtering in content based approach.
+ 4) Create a unified recommender system that brings together both approaches.
+
+First we will be using the content based approach to generate the profile of the student then when we will collect data and interests of a good number of students then we will use Collaborative filtering to enhance the quality of recommendations .So, after a course of time our system will be using hybrid approach. 
+
+
+Hardware and Software 
+
+* Apache Spark
+* IPython
+* NOSQL Database 
+* Django/Flask.
+* Windows 7
+* Amazon EC-2  Service.
+
+
+Testing Strategies to be used
+* Unit Testing
+* Integration Testing
+* Functional Testing
+* Stress Testing
+Contributions made by the Project 
+
+* This project will help the students in deciding the best project for them.
+* This will also contribute in providing them the right and best decision of technology to be used which suits his/her personality.
+Limitation
+New User: Enough keywords have to be collected before our recommender system can really understand student preferences and provide accurate recommendations. Therefore, when few keywords are available, as for a new student, the system will not be able to provide reliable recommendations.
+
+Future Scope:
+
+After a certain course of time we will include various other fields like Arts, Commerce, Medical Sciences, and Humanities etc. We will also try to generate more user specific profile on the basis of their hobbies and will recommend more courses and training program which are conducted worldwide.
+
+ References
+
+[1]: Recommender Systems Handbook ,Editors: Ricci, F., Rokach, L., Shapira, B., Kantor, P.B.
+
+[2]: Data Science from Scratch: First Principles with Python 1st Edition,,by Joel Grus 
+
+[3]: Personalized News Recommendation Based on Click Behavior
+       Jiahui Liu, Peter Dolan, Elin Rønby Pedersen Google Inc.
+       1600 Amphitheatre Parkway, Mountain View, CA 94043, USA
+       {jiahui, peterdolan, elinp}@google.com
+
+
+ ( Signature of Faculty )        
+
+
+PROJECT SYNOPSIS2015
+
+
+
+
+

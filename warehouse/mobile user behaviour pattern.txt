@@ -1,0 +1,55 @@
+﻿Mobile User Behavior and Pattern Mining Using Data Mining
+
+There are wide range of potential mobile applications due to which mobile commerce had received a lot of interests from both of the industry and academia. Most of the users make transaction through mobile phones. In order to monitor the whole transaction process made through mobile phones, we propose a system where user’s mobile commerce behaviors are predicted. In this project we use data mining algorithm to predict the user’s mobile commerce behaviors such as their movements and purchase transactions. Here we explore a new data mining capability for a mobile commerce environment based on location based service. Our proposed system will predict mobile user’s movements and purchase transactions. This system is a web application where user will purchase resources that are available on the website. We used unique algorithm where the system will measure the similarities among stores and items. This system use certain pattern mining to find the mobile user’s movement and will predict the future mobile user behaviors. Location-based service is used to search the stores and items previously unknown to a user. The role of the admin is to monitor the whole transaction process, so there will be a secure transaction. This system will motivate many product based firms to sell their products online due to which they can easily get to know the demand of the user and can target right customer based on the products. 
+Features:
+• When mobile users purchase any product through mobile phone his movements are monitored by the system.
+• Our system uses unique algorithm to predict the similarities among stores and items.
+• This system uses certain pattern mining to find the mobile user’s movement and will predict mobile user behaviors.
+• Location based service is used to search the stores and items which are unknown to a user.
+• Whole transaction process is monitored by the admin in order to provide secure transaction.
+• This system will help many suppliers to easily find out the demand for certain products displayed on the website.
+
+
+
+
+
+
+Feasibility Study
+Our proposed system uses unique algorithm to predict the user’s movement and purchase transaction. When user browses the e-commerce website user movement is predicted using certain pattern mining. Location based service is used in order to search the stores and items which are unknown to the user.
+• Economic Feasibility
+This system will motivate many product based firms to display their products online which in turn increase the productivity and profitability of the organization. As there are many mobile users who make transaction through mobile phones which in turn help the firm to find out the demand of certain product and to find out right consumers. This will provide economic benefits to the organization. It includes quantification and identification of all the benefits expected.
+
+• Operational Feasibility
+This system is more reliable, maintainable, affordable and producible. These are the parameters which are considered during design and development of this project. During design and development phase of this project there was appropriate and timely application of engineering and management efforts to meet the previously mentioned parameters.
+ 
+• Technical Feasibility
+The back end of this project is SQL server which stores parameters related to user behaviors and other details which is related to this project. This system is developed in .Net Framework using C#. This application will be online so this application can be accessed by using any device like (Personal Computers, Laptop and with some hand held devices).
+Advantages
+• This system will allow many users to make transaction securely as whole transaction being monitored by the system.
+• This system will motivate many product based firms to sell their products online.
+• This system will help supplier to know demand of the user.
+• This system will help the salesperson to target the right consumers.	
+Disadvantages:
+• If internet connection fails, this system won’t work.
+
+
+Future Scope
+• There can be a module where user can specify their requirement about any product which will help organization to understand the requirement of the user and can consider while launching new product.
+Software Requirements:
+• Windows 
+• Sql 
+• Visual studio 2010
+
+Hardware Components:
+• Processor – Dual Core
+• Hard Disk – 50 GB
+• Memory – 1GB RAM
+• Internet Connection
+Application:
+• This system can be used by many firms for selling their product online as well as will get to know the demand of the user.
+Reference
+• http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7033754&queryText=An+efficient+mobile+commerce+explorer+for+mobile+user%27s+behavior+pattern+mining+and+prediction&matchBoolean=true&newsearch=true&searchField=Search_All
+
+
+
+
